@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+	<MsPerfAgent>
+    <StatsToGraphiteConfig>C:\Program Files\msPerfAgent\conf\StatsToGraphiteConfig.xml</StatsToGraphiteConfig>
+    <MaxDegreeOfParallelism>0</MaxDegreeOfParallelism>  <!-- disabled < 0, auto = 0, manual > 0 -->
+    <UseUtcTime>True</UseUtcTime>
+    <processOnEachRun>False</processOnEachRun>
+    <MetricPath>msperfagent</MetricPath>
+    <MsPerfAgentMode>selected</MsPerfAgentMode> <!-- valid options is "all", "category" and "selected" -->
+    <SampleInterval>1</SampleInterval> <!-- Specifies the time between calculated samples in seconds. -->
+    <IncludeDomainNameIfExists>False</IncludeDomainNameIfExists> <!-- Includes the hosts domain name in metricPath if it exists.-->
+	</MsPerfAgent>
+  <ExcludePerfCategory>
+    <PerformanceCategory Name="Tråd"/>
+    <PerformanceCategory Name="Prosess"/>
+  </ExcludePerfCategory>
+  <PerfCategory>
+    <PerformanceCategory Name="System"/>
+    <PerformanceCategory Name="Memory"/>
+    <PerformanceCategory Name="Processor"/>
+    <PerformanceCategory Name="Processor Information"/>
+    <PerformanceCategory Name="Network Interface"/>
+    <PerformanceCategory Name="PhysicalDisk"/>
+  </PerfCategory>
+</Configuration>
