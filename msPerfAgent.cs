@@ -140,7 +140,7 @@ namespace Uninett.MsPerfAgent
             }
             catch (Exception e)
             {
-                log.Fatal("Main(): Exception - " + e.ToString());
+                log.Fatal("createUdpClient -> Exception -> " + e.ToString());
             }
 
             return udpClient;

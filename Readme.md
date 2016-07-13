@@ -42,19 +42,25 @@ Path to msPerfAgentConfig.xml is coded in msPerfAgentXml.cs (msPerfAgentPath)
 
 #### MsPerfAgentMode ####
 
-- selected
-Performance counters defined in StatsToGraphiteConfig.xml will be used
+- "selected" -> Performance counters defined in StatsToGraphiteConfig.xml will be used
+- "all" -> All counters on the system will be discovered. Performance categories defined in msPerfAgentConfig.xml below ExcludePerfCategory will be excluded from discovery.
+- "category" -> Performance counters that belongs to performance counter categories defined in msPerfAgentConfig.xml below PerfCategory will be discovered and included.
 
-- all
-All counters on the system will be discovered. Performance categories defined in msPerfAgentConfig.xml below ExcludePerfCategory will be excluded from discovery.
+#### processOnEachRun ####
 
-- category
-Performance counters that belongs to performance counter categories defined in msPerfAgentConfig.xml below PerfCategory will be discovered and included.
+If "True" XML Config files will be reloaded on each run and new defined configuration will be active. This will effect the overall run-time.
 
+#### MetricPath ####
+
+MetricPath is optional parameter in msPerfAgentConfig.xml. Overrides the MetricPath in StatsToGraphiteConfig.xml
 
 ## Known bugs ##
 
 - Help me vote on this: https://connect.microsoft.com/VisualStudio/feedback/details/2723276/performancecountercategory-getinstancenames-do-not-return-all-instances
+
+## To Do ##
+
+- Implement TCP support
 
 ## Disclaimer ##
 
