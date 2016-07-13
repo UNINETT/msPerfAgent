@@ -21,6 +21,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "configFiles", "configFiles"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "msPerfAgentService", "msPerfAgentService\msPerfAgentService.csproj", "{EF1D4281-DF57-4C2E-A76C-3FDE56825AAE}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{38CA6355-6A0E-4035-97F2-B032D11FE9BB}"
+	ProjectSection(SolutionItems) = preProject
+		docs\runemy.md = docs\runemy.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,5 +56,6 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{2C3DD74D-AD2A-46B8-A8FC-74F7E884F930} = {1E369F9E-5B24-422C-A5FA-648B31E6B0D7}
+		{38CA6355-6A0E-4035-97F2-B032D11FE9BB} = {1E369F9E-5B24-422C-A5FA-648B31E6B0D7}
 	EndGlobalSection
 EndGlobal
